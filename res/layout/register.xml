@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#3CB371"
+        android:weightSum="8" >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#fff"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:id="@+id/btn_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_user_reg"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_selector"
+        android:hint="微聊账号"
+        android:paddingLeft="5dp"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_password_reg"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_selector"
+        android:hint="密码"
+        android:paddingLeft="5dp"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp" />
+
+    <Button
+        android:onClick="register"
+        android:id="@+id/btn_reg"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/main_login_selector"
+        android:text="注册"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

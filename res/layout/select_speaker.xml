@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mview="http://schemas.android.com/apk/res/com.itgrape.robot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <base.BaseTitle
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        mview:titleText="选择发音人"
+        mview:viewBack="offView"
+        mview:viewSet="offView" />
+
+    <LinearLayout
+        android:id="@+id/ll_setSpeaker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#CCCCCC"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_setSpeaker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:text="是否开启发音"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_setSpeaker"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/yes" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_select_speaker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:dividerHeight="2dp" >
+    </ListView>
+
+</LinearLayout>

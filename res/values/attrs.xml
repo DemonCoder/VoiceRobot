@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <declare-styleable name="MyView">
+        <attr name="titleText" format="reference|string"/>  
+        <attr name="viewBack">
+            <enum name="onView" value="1"></enum>
+            <enum name="offView" value="0"></enum>
+        </attr>
+        <attr name="viewSet">
+            <enum name="onView" value="1"></enum>
+            <enum name="offView" value="0"></enum>
+        </attr>
+    </declare-styleable>  
+</resources>
